@@ -3,15 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face{
-    font-family: "Open Sans";
-    src: url("fonts/OpenSans/");
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 auto; */
 }
-@font-face{
-    font-family: "Playfair Display";
-    src: url("fonts/Playfair Display/");
-}
-
 .header{
     max-width: 1440px;
     height: 66px;

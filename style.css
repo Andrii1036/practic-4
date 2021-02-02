@@ -53,6 +53,41 @@
 .header_icon a+a{
     margin-left: 24px;
 }
+.header_button-mobile{
+    display: none;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.header_button-mobile span{
+    position: relative;
+    width: 80%;
+    height: 5px;
+    border-radius: 6px;
+    background-color: rgb(148, 143, 143);
+}
+.header_button-mobile span::before{
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: block;
+    top: -12px;
+}
+.header_button-mobile span::after{
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: block;
+    bottom: -12px;
+}
 /* ..........section1 carousel............... */
 .carousel{
     display: flex;
@@ -76,6 +111,7 @@
     max-width: 1440px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 35px 70px 50px 70px;
 }
 .content_header{
@@ -87,13 +123,16 @@
     letter-spacing: 0.03em;
     color: #000000;
     text-align: center;
-    margin-bottom: 30px;
 }
 .content_article{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .article{
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
     width: 342px; 
